@@ -18,6 +18,11 @@ const colorCode = document.getElementById("color-code");
 */
 function randomColor() {
   // TODO: Write logic to build and return a random hex color string
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    let num = Math.floor(Math.random() * 10);
+    let letter = String.fromCharCode(65 + Math.floor(Math.random() * 6));
+    color = color + num + letter;  
 }
 
 /* Step 3: Handle button click event
@@ -28,6 +33,9 @@ function randomColor() {
 */
 btn.onclick = function () {
   // TODO: Call the randomColor() function and store the result
+  newColor = randomColor();
   // TODO: Update the background color of the body
+  document.body.style.backgroundColor = newColor;
   // TODO: Update the text content of colorCode span
+  
 };

@@ -19,10 +19,11 @@ const colorCode = document.getElementById("color-code");
 function randomColor() {
   // TODO: Write logic to build and return a random hex color string
   let color = "#";
-  for (let i = 0; i < 3; i++) {
-    let num = Math.floor(Math.random() * 10);
-    let letter = String.fromCharCode(65 + Math.floor(Math.random() * 6));
-    color = color + num + letter;}
+  const hex = "0123456789ABCDEF";
+  for (let i = 0; i < 6; i++) {
+    let randomChar = hex[Math.floor(Math.random() * 16)];
+    color = color + randomChar;
+  }
   return color;
 }
 

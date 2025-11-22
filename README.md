@@ -7,6 +7,11 @@ In this version, the **main logic has been removed**, so you can write it yourse
 
 ---
 
+## 🌍 Sample Site
+You can see the completed sample site here: https://addison-haight.github.io/ShadeShuffle/
+
+---
+
 ## 🧩 Project Structure
 shade-shuffle/
 │

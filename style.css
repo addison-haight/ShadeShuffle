@@ -31,5 +31,8 @@ button {
   /* Changes cursor to pointer when hovered */
   cursor: pointer;
 
+  border-radius: 8px;
+  border: 2px solid #333;
+
   /* TODO: Students can experiment by adding hover effects or colors here */
 }
